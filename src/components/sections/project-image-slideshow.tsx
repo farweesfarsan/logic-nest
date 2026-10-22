@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -58,13 +57,13 @@ export function ProjectImageSlideshow({
             className="project-card__slide"
             key={`${src}-${index}`}
           >
-            <Image
-              src={src}
-              alt={`${alt} — image ${index + 1}`}
-              fill
-              sizes="(max-width: 759px) 100vw, 46vw"
-              className="project-card__image"
-            />
+          <Image
+            src={src}
+            alt={`${alt} — image ${index + 1}`}
+            fill
+            sizes="(max-width: 759px) calc(100vw - 32px), (max-width: 1212px) 46vw, 560px"
+            className="project-card__image"
+          />
           </div>
         ))}
       </div>
